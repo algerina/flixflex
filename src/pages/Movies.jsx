@@ -13,9 +13,9 @@ import NotAvailable from "../components/NotAvailable";
 
 function MoviePage() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const movies = useSelector((state) => state.netflix.movies);
-  const genres = useSelector((state) => state.netflix.genres);
-  const genresLoaded = useSelector((state) => state.netflix.genresLoaded);
+  const movies = useSelector((state) => state.flixflex.movies);
+  const genres = useSelector((state) => state.flixflex.genres);
+  const genresLoaded = useSelector((state) => state.flixflex.genresLoaded);
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
