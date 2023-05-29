@@ -10,7 +10,7 @@
 
  
 <hr>
-![screenshot](./Screeshot.png)
+![screenshot](.flixflex-ui/src/assets/Screeshot.png)
 
 <hr>
 
