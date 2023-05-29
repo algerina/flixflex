@@ -4,6 +4,8 @@ import Login from "./pages/Login";
 import FlixFlex from "./pages/FlixFlex";
 import Signup from "./pages/Signup";
 import Player from "./pages/Player";
+import Movies from "./pages/Movies";
+
 
 
 export default function App() {
@@ -14,6 +16,8 @@ export default function App() {
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/" element={<FlixFlex />} />
         <Route exact path="/player" element={<Player />} />
+        <Route exact path="/movies" element={<Movies />} />
+
 
       </Routes>
     </BrowserRouter>
