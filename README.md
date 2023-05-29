@@ -9,8 +9,6 @@
 >  This project is a web application: Movie app FlixFlex. Built using React, Redux Toolkit, Firebase, Styled Components, Axios, Node.js, Express and MongoDB.
 
  
-<hr>
-![screenshot](.flixflex-ui/src/assets/Screeshot.png)
 
 <hr>
 
