@@ -15,10 +15,9 @@ import Slider from "../components/Slider";
 
 function FlixFlex() {
   const [isScrolled, setIsScrolled] = useState(false);
-  // const movies = useSelector((state) => state.flixflex.movies);
-  // const genres = useSelector((state) => state.flixflex.genres);
-  // const genresLoaded = useSelector((state) => state.flixflex.genresLoaded);
-
+  const movies = useSelector((state) => state.flixflex.movies);
+  const genres = useSelector((state) => state.flixflex.genres);
+  const genresLoaded = useSelector((state) => state.flixflex.genresLoaded);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -26,11 +25,11 @@ function FlixFlex() {
     dispatch(getGenres());
   }, []);
 
-  // useEffect(() => {
-  //   if (genresLoaded) {
-  //     dispatch(fetchMovies({ genres, type: "all" }));
-  //   }
-  // }, [genresLoaded]);
+  useEffect(() => {
+    if (genresLoaded) {
+      dispatch(fetchMovies({ genres, type: "all" }));
+    }
+  }, [genresLoaded]);
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (!currentUser) navigate("/login");

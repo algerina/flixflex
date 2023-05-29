@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import FlixFlex from "./pages/FlixFlex";
 import Signup from "./pages/Signup";
+import Player from "./pages/Player";
+
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/" element={<FlixFlex />} />
+        <Route exact path="/player" element={<Player />} />
+
       </Routes>
     </BrowserRouter>
   );
